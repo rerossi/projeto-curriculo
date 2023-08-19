@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+    <script src="/js/script.js"></script>
+    <link rel="stylesheet" href="/css/home.css" />
+    <link rel="stylesheet" href="/css/sobre.css" />
+    <link rel="stylesheet" href="/css/habilidades.css" />
+    <link rel="stylesheet" href="/css/contato.css" />
+    <link rel="stylesheet" href="/css/footer.css" />
+
+    <title>Minha Página</title>
+  </head>
+  <body>
+    <nav
+      class="navbar navbar-expand-lg fixed-top navbar-dark navbar-text bgNav noselect"
+    >
+      <div class="container">
+        <a class="navbar-brand" href="#!"
+          ><span class="mx-2" style="color: #208bd9">Rodrigo</span
+          ><span style="color: #fff">Rossi</span></a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item hoverNav">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                onclick="window.location.href = '#home'"
+                ><span>Home</span></a
+              >
+            </li>
+            <li class="nav-item hoverNav">
+              <a class="nav-link" href="#sobre-mim">Sobre mim</a>
+            </li>
+            <li class="nav-item hoverNav">
+              <a
+                class="nav-link"
+                href="https://github.com/rerossi?tab=repositories"
+                >Projetos</a
+              >
+            </li>
+            <li class="nav-item hoverNav">
+              <a class="nav-link" href="#habilidades">Habilidades</a>
+            </li>
+          </ul>
+
+          <a data-bs-toggle="modal" data-bs-target="#modalContato"
+            ><button class="botao-hover botao24">Contato</button></a
+          >
+        </div>
+      </div>
+    </nav>
+    <div
+      class="modal fade noselect"
+      id="modalContato"
+      tabindex="-1"
+      aria-labelledby="modalContatoLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content corModal">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modalContatoLabel">Contato</h5>
+
+            <button
+              type="button"
+              class="btn-close fechar"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="form-group">
+              <label for="nome" class="font-weight-bold">Nome</label>
+              <input
+                type="text"
+                placeholder="Seu nome"
+                class="rounded-pill form-control"
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="email" class="font-weight-bold">E-mail</label>
+              <input
+                type="email"
+                placeholder="Seu e-mail"
+                class="rounded-pill form-control"
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="mensagem" class="font-weight-bold">Mensagem</label>
+              <input
+                type="textarea"
+                type="text"
+                placeholder="Escreva sua mensagem"
+                class="rounded-pill form-control"
+              />
+            </div>
+          </div>
+
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn fechar text-white"
+              data-bs-dismiss="modal"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-x-circle"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"
+                />
+                <path
+                  d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 
+                  0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"
+                />
+              </svg>
+              Fechar
+            </button>
+
+            <button
+              type="button"
+              class="btn btn-success enviar text-white"
+              data-bs-dismiss="modal"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-envelope"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 
+                  7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64
+                  3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z"
+                />
+              </svg>
+              Enviar
+            </button>
+           
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade noselect" id="modalMensagemEnviada" tabindex="-1" aria-labelledby="modalMensagemEnviadaLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content corModal">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modalMensagemEnviadaLabel">Mensagem Enviada</h5>
+            <button type="button" class="btn-close fechar" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            Sua mensagem foi enviada com sucesso!
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <section id="home" class="container d-flex vh-100">
+      <img class="imagem" src="/assets/fotoeu.png" alt="foto Rodrigo" />
+      <div class="container buttons-column col-xxl-8 px-4 pt-5 text-white" id="home">
+        <div class="row flex-lg-row-reverse align-items-center g-5 pt-5">
+          <div class="col-10 col-sm-8 col-lg-6"></div>
+          <div class="col-lg-6">
+            <h1 class="display-5 fw-bold lh-1 mb-3 dev pt-2">
+              Seja bem vindo!
+            </h1>
+            <p class="lead pt-2">
+              Meu nome é Rodrigo, sou Desenvolvedor Web e criei essa página para
+              apresentar o meu perfil profissional.
+            </p>
+            <div class="d-grid gap-3 pt-2 d-md-flex justify-content-md-start">
+              <a class="bnhome" href="#sobre-mim"
+                ><span class="bnhomespan">Sobre mim</span></a
+              >
+              <a
+                class="contato"
+                href="/assets/Currículo Rodrigo.pdf"
+                target="_blank"
+                ><span class="contatospan">Currículo</span></a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="container-fluid display" id="sobre-mim">
+      <div class="row d-flex justify-content-center pt-5 mt-5">
+        <div class="section-title">
+          <span class="pt-5">SOBRE MIM</span>
+        </div>
+
+        <div class="col-md-7">
+          <div class="card p-3">
+            <div class="text-center">
+              <img
+                src="/assets/20191215_115943.jpg"
+                width="100"
+                class="rounded-circle"
+              />
+            </div>
+
+            <div class="text-center text-dark mt-3">
+              <h5 class="mt-2 mb-0">Rodrigo Rossi</h5>
+              <span>Web Developer</span>
+
+              <div class="px-4 mt-1">
+                <p class="fonts container">
+                  Olá! meu nome é Rodrigo, um entusiasta na area de tecnologia.
+                  Minha jornada é guiada pela curiosidade, e estou sempre em
+                  busca de novos desafios para crescer profissional e
+                  pessoalmente. Acredito na importância da resiliência para
+                  adaptação em qualquer situação, e busco aplicá-la em tudo que
+                  faço. Além disso, adoro esportes, o que me ajuda a manter o
+                  equilíbrio. Ansioso para conectar, aprender e explorar o
+                  desconhecido
+                </p>
+              </div>
+
+              <ul class="social-list">
+                <li>
+                  <a href="https://github.com/rerossi"
+                    ><img src="/assets/github.png" alt=""
+                  /></a>
+                </li>
+                <li>
+                  <a href="https://www.linkedin.com/in/rodrigo-rossi-3366a84a/"
+                    ><img src="/assets/linkedin.png" alt=""
+                  /></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="mt-5" id="habilidades">
+      <div class="row d-flex justify-content-center pt-5 m-0">
+        <div class="section-title">
+          <span style="color: #fff" class="pt-5">HABILIDADES</span>
+        </div>
+      </div>
+
+      <div class="body pb-5">
+        <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner" style="max-height: 65vh">
+            <div class="carousel-item active" data-bs-interval="5000">
+              <div class="img-box">
+                <a href="https://www.mysql.com" target="_blank"
+                  ><img
+                    class="img-fluid"
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original-wordmark.svg"
+                /></a>
+              </div>
+              <p class="testimonial">
+                O MySQL é um sistema gerenciador de banco de dados relacional de
+                código aberto usado na maioria das aplicações gratuitas para
+                gerir suas bases de dados.
+              </p>
+            </div>
+
+            <div class="carousel-item" data-bs-interval="5000">
+              <div class="img-box">
+                <a href="https://angular.io" target="_blank"
+                  ><img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg"
+                /></a>
+              </div>
+              <p class="testimonial">
+                O Angular é um framework JavaScript de código aberto mantido
+                pela Google para a construção de SPA (sigla para Single Page
+                Applications ou Aplicações de Página Única).
+              </p>
+            </div>
+
+            <div class="carousel-item" data-bs-interval="5000">
+              <div class="img-box">
+                <a href="https://www.typescriptlang.org" target="_blank"
+                  ><img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg"
+                /></a>
+              </div>
+              <p class="testimonial">
+                Typescript é uma linguagem de código aberto desenvolvida pela
+                Microsoft que foi construída em cima do Javascript, que é muito
+                difundido atualmente. Então esse “superset” foi criado para
+                adicionar recursos de tipagem estáticas à linguagem original.
+              </p>
+            </div>
+
+            <div class="carousel-item" data-bs-interval="5000">
+              <div class="img-box">
+                <a
+                  href="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript"
+                  ><img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+                /></a>
+              </div>
+              <p class="testimonial">
+                JavaScript é uma linguagem de programação que permite a você
+                implementar itens complexos em páginas web mostrando conteúdo
+                que se atualiza em um intervalo de tempo, mapas interativos ou
+                gráficos 2D/3D animados, etc.
+              </p>
+            </div>
+
+            <div class="carousel-item" data-bs-interval="5000">
+              <div class="img-box">
+                <a
+                  href="https://developer.mozilla.org/pt-BR/docs/Web/HTML"
+                  target="_blank"
+                  ><img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+                /></a>
+              </div>
+              <p class="testimonial">
+                HTML significa HiperText Markup Language, traduzindo ao
+                português: Linguagem de Marcação de Hipertexto. O HTML é o
+                componente básico da web, ele permite inserir o conteúdo e
+                estabelecer a estrutura básica de um website.
+              </p>
+            </div>
+
+            <div class="carousel-item" data-bs-interval="5000">
+              <div class="img-box">
+                <a href="https://developer.mozilla.org/pt-BR/docs/Web/CSS"
+                  ><img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
+                /></a>
+              </div>
+              <p class="testimonial">
+                CSS é a sigla para o termo em inglês Cascading Style Sheets que,
+                traduzido para o português, significa Folha de Estilo em
+                Cascatas. O CSS é fácil de aprender e entender e é facilmente
+                utilizado com as linguagens de marcação HTML ou XHTML.
+              </p>
+            </div>
+
+            <div class="carousel-item" data-bs-interval="5000">
+              <div class="img-box">
+                <a href="https://getbootstrap.com" target="_blank"
+                  ><img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg"
+                /></a>
+              </div>
+              <p class="testimonial">
+                Bootstrap é um framework front-end que fornece estruturas de CSS
+                para a criação de sites e aplicações responsivas de forma rápida
+                e simples. Além disso, pode lidar com sites de desktop e páginas
+                de dispositivos móveis da mesma forma.
+              </p>
+            </div>
+          </div>
+
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#myCarousel"
+            data-bs-slide="prev"
+          >
+            <!-- Setas criadas com pseudo-elementos -->
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+          </button>
+
+          <!-- Botão de navegação para a direita -->
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#myCarousel"
+            data-bs-slide="next"
+          >
+            <!-- Setas criadas com pseudo-elementos -->
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Próximo</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <div class="footer-basic mt-5">
+      <footer>
+        <div class="social">
+          <a href="https://github.com/rerossi"
+            ><img src="/assets/github.png" alt=""
+          /></a>
+          <a href="https://www.linkedin.com/in/rodrigo-rossi-3366a84a/"
+            ><img src="/assets/linkedin.png" alt=""
+          /></a>
+        </div>
+        <ul class="list-inline">
+          <li class="list-inline-item"><a href="#home">Home</a></li>
+          <li class="list-inline-item">
+            <a data-bs-toggle="modal" data-bs-target="#modalContato">Contato</a>
+          </li>
+          <li class="list-inline-item">
+            <a
+              href="/assets/Currículo Rodrigo.pdf"
+              target="_blank"
+              >Currículo</a
+            >
+          </li>
+        </ul>
+        <p class="copyright">Rodrigo Rossi © 2023</p>
+      </footer>
+    </div>
+
+   
+  </body>
+</html>

@@ -1,0 +1,67 @@
+.body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+  }
+
+
+  
+  
+  .carousel {
+    width: 650px;
+    margin: 0 auto;
+    padding-bottom: 50px;
+  }
+  
+  .carousel .carousel-item {
+    color: rgb(214, 208, 208);
+    font-size: 15px;
+    text-align: center;
+    overflow: hidden;
+    min-height: 340px;
+  }
+  
+ 
+  
+  .carousel .img-box {
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+  }
+  
+
+  
+  .carousel .testimonial {
+    padding: 30px 0 10px;
+    font-size: 16px;
+    text-align: center;
+  }
+  
+  .carousel-control-prev,
+  .carousel-control-next {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: #20dad8;
+    text-shadow: none;
+    top: 4px;
+  }
+  
+ 
+  
+  .carousel-control-prev {
+    left: auto;
+    right: 40px;
+  }
+  
+ 
+  
+ 
+  
+
+  
+
+  
+ 

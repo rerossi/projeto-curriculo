@@ -1,0 +1,199 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+  }
+  
+/* Color of the links BEFORE scroll */
+a{
+    cursor: pointer;
+  }
+  
+  .bgNav {
+    background-color: #141414;
+  }
+  
+  .fonte{
+      font-family: 'DM Sans', sans-serif;
+      font-size: 18px;
+  }
+  
+  .navbar-brand {
+    font-size: 1.75rem;
+    letter-spacing: 3px;
+  }
+  
+  .hoverNav{
+    color: inherit;
+    text-decoration: none;
+  }
+  
+  .hoverNav{
+    background:
+      linear-gradient(
+        to right,
+        #fff,
+        #fff
+      ),
+      linear-gradient(
+        to right,
+        #208bd9,
+        #20dad8,
+        #208bd9
+    );
+    background-size: 100% 3px, 0 3px;
+    background-position: 100% 100%, 0 100%;
+    background-repeat: no-repeat;
+    transition: background-size 400ms;
+  }
+  
+  .hoverNav:hover{
+    background-size: 0 3px, 100% 3px;
+  }
+  
+  
+  
+  .botao-hover {
+      width: 120px;
+      font-size: 16px;
+      font-weight: 600;
+      color: #fff;
+      cursor: pointer;
+      margin: 10px;
+      height: 35px;
+      text-align: center;
+      border: none;
+      background-size: 300% 100%;
+      border-radius: 50px;
+      -o-transition: all 0.4s ease-in-out;
+      -webkit-transition: all 0.4s ease-in-out;
+      transition: all 0.4s ease-in-out;
+    }
+    
+    .botao-hover:hover {
+      background-position: 100% 0;
+      -o-transition: all .4s ease-in-out;
+      -webkit-transition: all .4s ease-in-out;
+      transition: all .4s ease-in-out;
+    }
+    .botao-hover:focus {
+      outline: none;
+    }
+    
+    .botao-hover.botao24 {
+      background-image: linear-gradient(
+          to right,
+          #208bd9,
+          #20dad8,
+          #208bd9
+         
+        );
+      box-shadow: 0 4px 15px 0 #20dad8;
+    }
+
+  #home{
+    align-items: center;
+   
+
+  }
+
+  .dev {
+    font-weight: 700;
+    text-align: center;
+    font-size: 50px;
+    font-family: Hack, sans-serif;
+    text-transform: uppercase;
+    background: linear-gradient(90deg, #208bd9, #20dad8, #141414);
+    letter-spacing: 5px;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-repeat: no-repeat;
+    background-size: 80%;
+    animation: shine 5s linear infinite;
+    position: relative;
+}
+
+@keyframes shine {
+    0% {
+        background-position-x: -500%;
+    }
+
+    100% {
+        background-position-x: 500%;
+    }
+}
+
+/* BOTÕES */
+.bnhome {
+    background-image: linear-gradient(to right, #208bd9 0%, #20dad8 100%);
+    border-radius: 40px;
+    box-sizing: border-box;
+    color: #fff;
+    display: block;
+    height: 50px;
+    font-size: 1.4em;
+    padding: 4px;
+    position: relative;
+    text-decoration: none;
+    width: 7em;
+    z-index: 2;
+}
+
+.bnhome:hover {
+    color: #fff;
+}
+
+.bnhome .bnhomespan {
+    align-items: center;
+    background-image: linear-gradient(to right, #208bd9 0%, #20dad8 100%);
+    border-radius: 40px;
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    transition: background 0.5s ease;
+    width: 100%;
+}
+
+.bnhome:hover .bnhomespan {
+    background: #141414;
+}
+
+
+.contato {
+    background-image: linear-gradient(to right, #208bd9 0%, #20dad8 100%);
+    border-radius: 40px;
+    box-sizing: border-box;
+    color: #fff;
+    display: block;
+    height: 50px;
+    font-size: 1.4em;
+    padding: 4px;
+    position: relative;
+    text-decoration: none;
+    width: 7em;
+    z-index: 2;
+}
+
+.contato:hover {
+    color: #fff;
+}
+
+.contato .contatospan {
+    align-items: center;
+    background: #141414;
+    border-radius: 40px;
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    transition: background 0.5s ease;
+    width: 100%;
+}
+
+.contato:hover .contatospan {
+    background: transparent;
+}
+
+
+ 
